@@ -119,7 +119,7 @@ class App extends Component {
           >Send</button>
           </div>
         </div>
-        <center>Codi Room Messages :</center>
+        <center>Codi-Tech Room Messages :</center>
         <div className="messages">
         {this.state.oldmsgs.map((o,i) => {
           return (
