@@ -118,4 +118,9 @@ center {
   .date {
     font-size: 15px;
   }
+
+  .messages {
+    width: 98%;
+    padding: 0px;
+  }
 }
