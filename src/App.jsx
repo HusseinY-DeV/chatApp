@@ -93,7 +93,7 @@ class App extends Component {
           this.setState({show : !this.state.show})
         }}
         >
-          {this.state.name} : {this.state.isConnected ? 'connected' : 'disconnected'}</h3>
+           {this.state.isConnected ? 'connected' : 'disconnected'} as {this.state.name}  </h3>
           </div>
         <div className="form">
           <div className="inputs">
