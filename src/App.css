@@ -43,7 +43,8 @@ body {
 }
 
 .send {
-  width: 250px;
+  width: fit-content;
+  padding: 10px;
   height: 6vh;
   cursor: pointer;
 }
@@ -85,7 +86,9 @@ body {
 
 center {
   font-size: 32px;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: lightskyblue;
 }
 .msg-header {
   display: flex;
