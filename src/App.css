@@ -124,3 +124,7 @@ center {
     padding: 0px;
   }
 }
+
+.seperator {
+  height: 64px;
+}
