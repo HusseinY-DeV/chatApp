@@ -7,7 +7,7 @@ import './App.css';
 
 const Input = styled.div`
  opacity : ${({show}) => show ? 1 : 0};
- position: absolute;
+ position : absolute;
  top: 50px;
  left: 10px;
  width:300px;

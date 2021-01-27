@@ -21,12 +21,12 @@ body {
 
 .form {
   background-color: rgba(100, 148, 237, 0.281);
-  width: 50%;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 30px;
   position: fixed;
   bottom: 10px;
   left: 50%;
@@ -35,9 +35,11 @@ body {
 }
 
 .inputs {
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  transform: translateX(0%);
 }
 
 .send {
@@ -88,7 +90,7 @@ body {
 }
 
 .text-inp {
-  width: 500px;
+  max-width: 500px;
   height: 6vh;
 }
 
