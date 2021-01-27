@@ -28,6 +28,8 @@ class App extends Component {
   }
   socket = null
 
+  date = new Date();
+
   componentWillMount(){
 
     this.socket = io('https://codi-server.herokuapp.com');
@@ -121,14 +123,18 @@ class App extends Component {
         </div>
         <center>Codi-Tech Room Messages :</center>
         <div className="messages">
+          {console.log(this.state.text.oldmsgs)}
         {this.state.oldmsgs.map((o,i) => {
           return (
             <div className="e-ms" key={i}>
               <div className="msg-header">
-                <img src={profile} width="30px"/>
-                <p className="name">{o.name}</p>
+                <div className="sub-header">
+                  <img src={profile} width="30px"/>
+                  <p className="name">{typeof o.name === "string" ? o.name : ""}</p>
+                </div>
+                <p className="date">{this.date.toLocaleString()}</p>
               </div>
-              <p className="msg">{o.text}</p>
+              <p className="msg">{typeof o.text === "string" ? o.text : ""}</p>
             </div>
           )
         })}

@@ -91,10 +91,31 @@ center {
   color: lightskyblue;
 }
 .msg-header {
+  padding: 5px 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .msg-header img {
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .msg-header {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .date {
+    font-size: 15px;
+  }
 }
